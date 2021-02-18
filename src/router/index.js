@@ -6,15 +6,16 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
     path: '/login',
     name: 'login',
     meta: {layout: 'empty'},
     component: () => import('../views/Login.vue')
+  },
+  {
+    path: '/register',
+    name: 'register',
+    meta: {layout: 'empty'},
+    component: () => import('../views/Register.vue')
   },
   {
     path: '/categories',
@@ -23,10 +24,10 @@ const routes = [
     component: () => import('../views/Categories.vue')
   },
   {
-    path: '/detail-record',
-    name: 'detail-record',
+    path: '/detail/:id',
+    name: 'detail',
     meta: {layout: 'main'},
-    component: () => import('../views/Detail-record.vue')
+    component: () => import('../views/Detail.vue')
   },
   {
     path: '/history',
@@ -35,7 +36,7 @@ const routes = [
     component: () => import('../views/History.vue')
   },
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     meta: {layout: 'main'},
     component: () => import('../views/Home.vue')
@@ -57,12 +58,6 @@ const routes = [
     name: 'record',
     meta: {layout: 'main'},
     component: () => import('../views/Record.vue')
-  },
-  {
-    path: '/register',
-    name: 'register',
-    meta: {layout: 'main'},
-    component: () => import('../views/Register.vue')
   }
 ]
 
