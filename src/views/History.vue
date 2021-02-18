@@ -59,70 +59,55 @@
     <main class="app-content">
       <div class="app-page">
 
-      <div>
-        <div class="page-title">
-          <h3>Счет</h3>
-
-          <button class="btn waves-effect waves-light btn-small">
-            <i class="material-icons">refresh</i>
-          </button>
-        </div>
-
-        <div class="row">
-          <div class="col s12 m6 l4">
-            <div class="card light-blue bill-card">
-              <div class="card-content white-text">
-                <span class="card-title">Счет в валюте</span>
-
-                <p class="currency-line">
-                  <span>12.0 Р</span>
-                </p>
-              </div>
-            </div>
+        <div>
+          <div class="page-title">
+            <h3>История записей</h3>
           </div>
 
-          <div class="col s12 m6 l8">
-            <div class="card orange darken-3 bill-card">
-              <div class="card-content white-text">
-                <div class="card-header">
-                  <span class="card-title">Курс валют</span>
-                </div>
-                <table>
-                  <thead>
-                  <tr>
-                    <th>Валюта</th>
-                    <th>Курс</th>
-                    <th>Дата</th>
-                  </tr>
-                  </thead>
-
-                  <tbody>
-                  <tr>
-                    <td>руб</td>
-                    <td>12121</td>
-                    <td>12.12.12</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+          <div class="history-chart">
+            <canvas></canvas>
           </div>
+
+          <section>
+            <table>
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Сумма</th>
+                <th>Дата</th>
+                <th>Категория</th>
+                <th>Тип</th>
+                <th>Открыть</th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>1212</td>
+                <td>12.12.32</td>
+                <td>name</td>
+                <td>
+                  <span class="white-text badge red">Расход</span>
+                </td>
+                <td>
+                  <button class="btn-small btn">
+                    <i class="material-icons">open_in_new</i>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </section>
         </div>
+
       </div>
+    </main>
 
-</div>
-</main>
-
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large blue" href="#">
-    <i class="large material-icons">add</i>
-  </a>
-</div>
-</div>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large blue" href="#">
+        <i class="large material-icons">add</i>
+      </a>
+    </div>
+  </div>
 </template>
-
-<script>
-  export default {
-    name: 'Home'
-  }
-</script>
