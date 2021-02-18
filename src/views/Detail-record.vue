@@ -11,11 +11,7 @@
 
         <ul class="right hide-on-small-and-down">
           <li>
-            <a
-                class="dropdown-trigger black-text"
-                href="#"
-                data-target="dropdown"
-            >
+            <a class="dropdown-trigger black-text" href="#" data-target="dropdown">
               USER NAME
               <i class="material-icons right">arrow_drop_down</i>
             </a>
@@ -58,7 +54,6 @@
 
     <main class="app-content">
       <div class="app-page">
-
         <div>
           <div>
             <div class="breadcrumb-wrap">
@@ -67,6 +62,7 @@
                 Расход
               </a>
             </div>
+
             <div class="row">
               <div class="col s12 m6">
                 <div class="card red">
@@ -74,7 +70,6 @@
                     <p>Описание:</p>
                     <p>Сумма:</p>
                     <p>Категория:</p>
-
                     <small>12.12.12</small>
                   </div>
                 </div>
@@ -82,7 +77,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </main>
 

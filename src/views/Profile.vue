@@ -11,11 +11,7 @@
 
         <ul class="right hide-on-small-and-down">
           <li>
-            <a
-                class="dropdown-trigger black-text"
-                href="#"
-                data-target="dropdown"
-            >
+            <a class="dropdown-trigger black-text" href="#" data-target="dropdown">
               USER NAME
               <i class="material-icons right">arrow_drop_down</i>
             </a>
@@ -58,37 +54,32 @@
 
     <main class="app-content">
       <div class="app-page">
+        <div>
+          <div class="page-title">
+            <h3>Профиль</h3>
+          </div>
 
-<div>
-  <div class="page-title">
-    <h3>Профиль</h3>
-  </div>
+          <form class="form">
+            <div class="input-field">
+              <input id="description" type="text">
+              <label for="description">Имя</label>
+              <span
+                    class="helper-text invalid">name</span>
+            </div>
 
-  <form class="form">
-    <div class="input-field">
-      <input
-          id="description"
-          type="text"
-      >
-      <label for="description">Имя</label>
-      <span
-            class="helper-text invalid">name</span>
+            <button class="btn waves-effect waves-light" type="submit">
+              Обновить
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large blue" href="#">
+        <i class="large material-icons">add</i>
+      </a>
     </div>
-
-    <button class="btn waves-effect waves-light" type="submit">
-      Обновить
-      <i class="material-icons right">send</i>
-    </button>
-  </form>
-</div>
-
-</div>
-</main>
-
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large blue" href="#">
-    <i class="large material-icons">add</i>
-  </a>
-</div>
-</div>
+  </div>
 </template>

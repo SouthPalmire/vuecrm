@@ -11,11 +11,7 @@
 
         <ul class="right hide-on-small-and-down">
           <li>
-            <a
-                class="dropdown-trigger black-text"
-                href="#"
-                data-target="dropdown"
-            >
+            <a class="dropdown-trigger black-text" href="#" data-target="dropdown" >
               USER NAME
               <i class="material-icons right">arrow_drop_down</i>
             </a>
@@ -58,67 +54,64 @@
 
     <main class="app-content">
       <div class="app-page">
-
-      <div>
-        <div class="page-title">
-          <h3>Счет</h3>
-
-          <button class="btn waves-effect waves-light btn-small">
-            <i class="material-icons">refresh</i>
-          </button>
-        </div>
-
-        <div class="row">
-          <div class="col s12 m6 l4">
-            <div class="card light-blue bill-card">
-              <div class="card-content white-text">
-                <span class="card-title">Счет в валюте</span>
-
-                <p class="currency-line">
-                  <span>12.0 Р</span>
-                </p>
-              </div>
-            </div>
+        <div>
+          <div class="page-title">
+            <h3>Счет</h3>
+            <button class="btn waves-effect waves-light btn-small">
+              <i class="material-icons">refresh</i>
+            </button>
           </div>
 
-          <div class="col s12 m6 l8">
-            <div class="card orange darken-3 bill-card">
-              <div class="card-content white-text">
-                <div class="card-header">
-                  <span class="card-title">Курс валют</span>
-                </div>
-                <table>
-                  <thead>
-                  <tr>
-                    <th>Валюта</th>
-                    <th>Курс</th>
-                    <th>Дата</th>
-                  </tr>
-                  </thead>
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <div class="card light-blue bill-card">
+                <div class="card-content white-text">
+                  <span class="card-title">Счет в валюте</span>
 
-                  <tbody>
-                  <tr>
-                    <td>руб</td>
-                    <td>12121</td>
-                    <td>12.12.12</td>
-                  </tr>
-                  </tbody>
-                </table>
+                  <p class="currency-line">
+                    <span>12.0 Р</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6 l8">
+              <div class="card orange darken-3 bill-card">
+                <div class="card-content white-text">
+                  <div class="card-header">
+                    <span class="card-title">Курс валют</span>
+                  </div>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Валюта</th>
+                      <th>Курс</th>
+                      <th>Дата</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                      <td>руб</td>
+                      <td>12121</td>
+                      <td>12.12.12</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </main>
 
-</div>
-</main>
-
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large blue" href="#">
-    <i class="large material-icons">add</i>
-  </a>
-</div>
-</div>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large blue" href="#">
+        <i class="large material-icons">add</i>
+      </a>
+    </div>
+  </div>
 </template>
 
 <script>

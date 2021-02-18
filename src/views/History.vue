@@ -58,7 +58,6 @@
 
     <main class="app-content">
       <div class="app-page">
-
         <div>
           <div class="page-title">
             <h3>История записей</h3>
@@ -100,7 +99,6 @@
             </table>
           </section>
         </div>
-
       </div>
     </main>
 
