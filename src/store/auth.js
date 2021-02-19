@@ -6,7 +6,8 @@ export default {
       try {
         await firebase.auth().signInWithEmailAndPassword(email, password)
       } catch (err) {
-        
+        console.log(err)
+        throw err
       }
     }
   }
