@@ -1,5 +1,5 @@
 <template>
-  <form class="card auth-card">
+  <form class="card auth-card" @submit="submitHandler">
     <div class="card-content">
       <span class="card-title">Домашняя бухгалтерия</span>
       <div class="input-field">
@@ -17,13 +17,42 @@
 
     <div class="card-action">
       <div>
-        <button class="btn waves-effect waves-light auth-submit" type="submit">
+        <button 
+          class="btn waves-effect waves-light auth-submit" 
+          type="submit"
+        >
           Войти
           <i class="material-icons right">send</i>
         </button>
       </div>
 
-      <p class="center">Нет аккаунта?<a href="/">Зарегистрироваться</a></p>
+      <p class="center">
+        Нет аккаунта?
+        <router-link to="/register">Зарегистрироваться</router-link>
+      </p>
     </div>
   </form>
 </template>
+
+<script>
+  import {email, required, minLenght} from 'vuelidate/lib/validators'
+
+  export default {
+    name: 'login',
+    data() {
+      return {
+        email: '',
+        password: ''
+      }
+    },
+    validations: {
+      email: {email, required},
+      password: {required, minLenght: minLenght(6)}
+    },
+    methods: {
+      submitHandler() {
+        this.$router.push('/')
+      }
+    }
+  }
+</script>
