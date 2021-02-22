@@ -26,11 +26,17 @@
   export default {
     name: 'main-layout',
     components: {
-      Navbar, Sidebar
+      Navbar,
+      Sidebar
     },
     data() {
       return {
         isOpen: true
+      }
+    },
+    mounted() {
+      if (this.$store.getters) {
+        await this.$store.dispatch('fetchInfo')
       }
     }
   }
