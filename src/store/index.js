@@ -21,7 +21,6 @@ export default new Vuex.Store({
     error: s => s.error
   },
   modules: {
-    auth,
-    info
+    auth, info
   }
 })
