@@ -1,13 +1,30 @@
 <template>
   <div id="app">
-    <router-view/>
+    <component :is="layout">
+      <router-view/>
+    </component>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<script>
+import EmptyLayout from '@/layouts/EmptyLayout'
+import MainLayout from '@/layouts/MainLayout'
+
+export default {
+  components: {
+    EmptyLayout,
+    MainLayout
+  },
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || 'empty') + '-layout'
+    }
+  }
 }
+</script>
+
+
+<style lang="scss">
+@import '~materialize-css/dist/css/materialize.min.css';
+@import 'assets/index.css';
 </style>
